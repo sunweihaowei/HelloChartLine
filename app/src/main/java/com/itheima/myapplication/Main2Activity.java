@@ -23,7 +23,7 @@ HelloChrat的线型图LineChartView总结：
 在建立setLineChartData( data );//把线型图数据建立到布局上
 数据：LineChartData：XAxis轴，Y轴，折线Line，加进去
 设置值时：先创建int或String值，然后在将值加到list里（这里要类型，要new）
-
+//注意：线值new时没有提示，需要自己记住new LineValue（建在哪里，值）
 
 
 */
