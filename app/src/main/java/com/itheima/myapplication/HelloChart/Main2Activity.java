@@ -1,9 +1,11 @@
-package com.itheima.myapplication;
+package com.itheima.myapplication.HelloChart;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.itheima.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.List;
