@@ -49,7 +49,7 @@ public class Main2Activity extends AppCompatActivity {
     private void setAxisXLables(){
         for (int i=0;i<lineData.length;i++){
             //new AxisValue( i ).setLabel( lineData[i] ),即加入到值里的标签
-            axisValues.add( new AxisValue( i ).setLabel( lineData[i] ) );
+            axisValues.add( new AxisValue( i ).setLabel( lineData[i] ) );//AxisValue参数i表示建立的位置，这里已经为我们找到了对应点，如1为Line的第二个点
         }
     }
     private void setAxisPoints(){

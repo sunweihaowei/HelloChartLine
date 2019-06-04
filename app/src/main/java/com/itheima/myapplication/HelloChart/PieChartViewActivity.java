@@ -41,7 +41,7 @@ public class PieChartViewActivity extends AppCompatActivity {
         initPie();
         final PieChartOnValueSelectListener pieChartOnValueSelectListener=new PieChartOnValueSelectListener() {
             @Override
-            public void onValueSelected(int i, SliceValue sliceValue) {
+            public void onValueSelected(int i, SliceValue sliceValue) {//i表示点击的那一项，slicevalue为点击的那个的值
                 data.setCenterText1( stateChar[i] );
                 data.setCenterText2( sliceValue.getValue()+"("+calPercent( i )+")" );
             }
@@ -69,9 +69,9 @@ public class PieChartViewActivity extends AppCompatActivity {
         data.setHasLabels( true );//是否有数据显示
         data.setCenterCircleScale( 0.5f );//设置中心相对于全部的占比大小
         data.setCenterText1( "数据" );//设置center默认数据
-        data.setHasLabelsOnlyForSelected( false );//这个表示是否选中时才显示数据，true为选中时才有数据
-        data.setHasLabelsOutside( true );//这个表示数据是否显示在外面
-        data.setValues(sliceValues  );//这个表示为PieChartData建立数据（List类型数据）
+        data.setHasLabelsOnlyForSelected( true );//这个表示是否选中时才显示数据，true为选中时才有数据
+        data.setHasLabelsOutside( false );//这个表示数据是否显示在外面
+        data.setValues(sliceValues);//这个表示为PieChartData建立数据（List类型数据）
 
         pcv.setPieChartData( data );
         pcv.setValueSelectionEnabled( true );//是否可以选择，true为可以且会变大
